@@ -1,0 +1,60 @@
+{
+  "name": "jrc-personal-website",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jrc-dev3/jrc-personal-website.git"
+  },
+  "scripts": {
+    "start": "webpack-dev-server -d --config=webpack/webpack.dev.js --open --history-api-fallback --inline --progress --hot",
+    "watch": "webpack --watch -d",
+    "dev": "webpack -p --progress --config=webpack/webpack.dev.js --mode development",
+    "build": "rm -rf dist/* ; webpack -p --progress --config=webpack/webpack.prod.js --mode production",
+    "clean": "rm -rf dist/"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "d3-drag": "^1.2.4",
+    "d3-force": "^2.0.1",
+    "d3-selection": "^1.4.0",
+    "d3-zoom": "^1.8.3",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-scroll-to-component": "^1.0.2",
+    "react-youtube": "^7.9.0",
+    "semantic-ui-css": "^2.4.0",
+    "semantic-ui-react": "^0.82.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "css-loader": "^1.0.0",
+    "eslint-config-react-tools": "1.x.x",
+    "file-loader": "^2.0.0",
+    "handlebars-loader": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "react-hot-loader": "^4.3.6",
+    "serve": "^11.1.0",
+    "style-loader": "^0.23.0",
+    "terser-webpack-plugin": "^2.0.1",
+    "typescript": "^3.0.3",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.1.4"
+  }
+}

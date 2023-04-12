@@ -1,0 +1,37 @@
+@keyframes zooming {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.media-container .media-video {
+  filter: drop-shadow(0 0 0.15rem black);
+}
+@media only screen and (min-width: 760px) {
+  .media-container .media-caption {
+    -webkit-transition: all 1s ease;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    transition: 1s;
+  }
+  .media-container .media-caption:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+/*# sourceMappingURL=mediaPage.css.map */

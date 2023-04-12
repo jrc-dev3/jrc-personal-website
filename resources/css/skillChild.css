@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Turret+Road:700&display=swap");
+#skillChildContainer {
+  position: relative;
+}
+#skillChildContainer #skillChildImageContainer {
+  opacity: 0.1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#skillChildContainer #skillChildTextContainer {
+  width: 100%;
+  height: auto;
+  margin: auto 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: none;
+}
+#skillChildContainer #skillChildTextContainer h2 {
+  font-family: "Turret Road", cursive;
+  font-weight: bolder;
+}
+#skillChildContainer #skillChildTextContainer p {
+  font-family: "Playfair Display", serif;
+  font-weight: bolder;
+}
+#skillChildContainer #skillChildTextContainer div {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=skillChild.css.map */

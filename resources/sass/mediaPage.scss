@@ -1,0 +1,49 @@
+@keyframes zooming {
+    0%{
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+  60% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100%{
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+@mixin random-drop-shadow-color(){
+  filter: drop-shadow(0 0 0.75rem rgb(random(255), random(255), random(255) ));
+}
+
+.media-container {
+  .media-video {
+    filter: drop-shadow(0 0 0.15rem black);
+    //@include random-drop-shadow-color()
+  }
+
+
+@media only screen and (min-width: 760px){
+  .media-caption{
+    -webkit-transition: all 1s ease;
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    -o-transform: scale(1.0);
+    transform: scale(1.0);
+    transition: 1s;
+    // -webkit-animation: zooming 5s;
+    // animation: zooming 5s;
+  
+    &:hover{
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+}
+  
+}
